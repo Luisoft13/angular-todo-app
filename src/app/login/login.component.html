@@ -1,0 +1,24 @@
+<div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+  <div class="card custom-card">
+    <div class="card-body">
+      <h5 class="card-title">Login</h5>
+      <div class="form-group pb-2">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" id="username" [(ngModel)]="username">
+      </div>
+      <div class="form-group pb-2">
+        <label for="password">Password</label>
+        <div class="input-group">
+          <input type="{{ passwordVisible ? 'text' : 'password' }}" class="form-control" id="password" [(ngModel)]="password">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" (click)="togglePasswordVisibility()">
+              <i [ngClass]="passwordVisible ? 'bi bi-eye-slash' : 'bi bi-eye'"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary" (click)="login()" [@buttonAnimation]>Login</button>
+      <div class="alert alert-danger mt-3" *ngIf="showAlert">Las credenciales no son correctas, ingresa nuevamente tus datos.</div>
+    </div>
+  </div>
+</div>
