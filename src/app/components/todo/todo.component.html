@@ -39,6 +39,7 @@
               task.description
             }}</span>
           </div>
+          <i class="bi bi-check-lg check-icon" *ngIf="task.completed"></i>
           <button
             *ngIf="!task.completed"
             class="btn btn-danger btn-sm float-right"

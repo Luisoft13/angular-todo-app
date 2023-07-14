@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
-import * as AppActions from '../store/app.actions';
-import { User } from '../models/user.model';
-import { AppState } from '../store/app.state';
+import * as AppActions from '../../store/app.actions';
+import { User } from '../../models/user.model';
+import { AppState } from '../../store/app.state';
 import { Router } from '@angular/router';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 

@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Store, select } from '@ngrx/store';
-import * as AppActions from '../store/app.actions';
-import { Task } from '../models/task.model';
-import { AppState } from '../store/app.state';
+import * as AppActions from '../../store/app.actions';
+import { Task } from '../../models/task.model';
+import { AppState } from '../../store/app.state';
 import { map } from 'rxjs';
 import { Router } from '@angular/router';
 
